@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /**
+        Log.i(TAG,"CREATE");
+
+                /**
          * Manipulation du ContentProvider personnel
          */
         //Récupération du contentResolver

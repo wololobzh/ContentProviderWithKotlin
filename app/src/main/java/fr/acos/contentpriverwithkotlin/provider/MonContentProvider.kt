@@ -152,7 +152,7 @@ class MonContentProvider : ContentProvider()
     {
         Log.i(TAG,"Fonction query. uri = $uri")
         Log.i(TAG,"Fonction query. Matcher.match(uri) = ${MATCHER.match(uri)}")
-        var cursor:Cursor? = null
+        var cursor:Cursor?
         //Création d'un objet représentant la base de données.
         val db = MaBaseDeDonnees.getInstance(context)
         //Création d'un objet représentant la DAO pour les personnes.

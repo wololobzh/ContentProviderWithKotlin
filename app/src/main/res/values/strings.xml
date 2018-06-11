@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">contentpriverwithkotlin</string>
+    <string name="description_droit_lire_personne">Permission de lire des infos sur les personnes</string>
+    <string name="description_droit_ecrire_personne">Permission de modifier des infos sur les personnes</string>
 </resources>

@@ -2,10 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.acos.contentpriverwithkotlin">
 
+    <permission
+        android:name="fr.acos.contentpriverwithkotlin.READ"
+        android:label="Lecture"
+        android:description="@string/description_droit_lire_personne"
+        android:permissionGroup="android.permission-group.STORAGE"
+        android:protectionLevel="dangerous" />
+
+    <permission
+        android:name="fr.acos.contentpriverwithkotlin.WRITE"
+        android:label="Ecriture"
+        android:description="@string/description_droit_ecrire_personne"
+        android:permissionGroup="android.permission-group.STORAGE"
+        android:protectionLevel="dangerous" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CP With Kotlin"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,7 +35,10 @@
             android:name=".provider.MonContentProvider"
             android:authorities="fr.acos.MonContentProvider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true"
+            android:readPermission="fr.acos.contentpriverwithkotlin.READ"
+            android:writePermission="fr.acos.contentpriverwithkotlin.WRITE"
+            ></provider>
     </application>
 
 </manifest>
